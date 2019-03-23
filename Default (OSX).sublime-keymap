@@ -1,0 +1,10 @@
+[
+    { "keys": ["super+s"], "command": "declare_panel", },
+    {
+        "keys": ["shift+super+s"],
+        "command": "declare_panel",
+        "args": {
+          "show_panel": true
+        }
+    },
+]

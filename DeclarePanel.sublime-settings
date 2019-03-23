@@ -1,0 +1,6 @@
+{
+    // Scroll the view to center when Show
+    "scroll_toggle": true,
+    // Use plugin anaconda for lookup symbol
+    "use_anaconda": true,
+}

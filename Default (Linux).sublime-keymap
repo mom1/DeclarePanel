@@ -1,0 +1,10 @@
+[
+    { "keys": ["alt+s"], "command": "declare_panel", },
+    {
+        "keys": ["ctrl+alt+s"],
+        "command": "declare_panel",
+        "args": {
+          "show_panel": true
+        }
+    },
+]

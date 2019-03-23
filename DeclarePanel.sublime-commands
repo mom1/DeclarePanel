@@ -1,0 +1,36 @@
+[
+  { "caption": "Preferences: DeclarePanel",
+    "command": "edit_settings",
+    "args": {
+      "base_file": "${packages}/DeclarePanel/DeclarePanel.sublime-settings",
+      "default": "{\n\t$0\n}\n"
+    }
+  },
+  { "caption": "Preferences: DeclarePanel Key Bindings",
+    "command": "edit_settings",
+    "args": {
+      "base_file": "${packages}/DeclarePanel/Default (${platform}).sublime-keymap",
+      "default": "[\n\t$0\n]\n"
+    }
+  },
+  { "caption": "DeclarePanel: Open Readme",
+    "command": "open_file",
+    "args": {
+      "file": "${packages}/DeclarePanel/README.md"
+    }
+  },
+  { "caption": "DeclarePanel: show panel",
+    "command": "declare_panel",
+    "args": {
+      "show_panel": true
+    }
+  },
+  {
+      "caption": "DeclarePanel: show declare",
+      "command": "declare_panel",
+  },
+  {
+    "caption": "DeclarePanel: goto_result",
+    "command": "goto_result",
+  }
+]
