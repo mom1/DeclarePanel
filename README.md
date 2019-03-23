@@ -17,7 +17,6 @@ Be careful the first result may not be relevant.
 Usage
 -----
 
-In Sublime Text from the context menu 'Paste as. . . ' or hotkeys <kbd>Shift + Alt + v</kbd>
 Position on the desired character and hit <kbd>Alt + s</kbd>
 For toggle panel <kbd>Ctrl + Alt + s</kbd>
 ### Screen
