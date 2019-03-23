@@ -21,7 +21,7 @@ In Sublime Text from the context menu 'Paste as. . . ' or hotkeys <kbd>Shift + A
 Position on the desired character and hit <kbd>Alt + s</kbd>
 For toggle panel <kbd>Ctrl + Alt + s</kbd>
 ### Screen
-![DeclarePanel]()
+![DeclarePanel](https://raw.githubusercontent.com/mom1/DeclarePanel/master/img/declare_panel.jpg)
 
 
 Installation
