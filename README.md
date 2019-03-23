@@ -18,6 +18,7 @@ Usage
 -----
 
 Position on the desired character and hit <kbd>Alt + s</kbd>
+
 For toggle panel <kbd>Ctrl + Alt + s</kbd>
 ### Screen
 ![DeclarePanel](https://raw.githubusercontent.com/mom1/DeclarePanel/master/img/declare_panel.jpg)
