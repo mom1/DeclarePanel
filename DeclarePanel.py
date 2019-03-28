@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: maxst
 # @Date:   2019-03-23 10:38:30
-# @Last Modified by:   maxst
-# @Last Modified time: 2019-03-23 18:36:53
+# @Last Modified by:   Max ST
+# @Last Modified time: 2019-03-28 12:08:31
 import sublime
 import sublime_plugin
 
@@ -138,16 +138,20 @@ class DeclarePanelCommand(sublime_plugin.WindowCommand):
         panel.set_syntax_file(self.view.settings().get('syntax'))
 
         def show_at_center():
-            panel.show_at_center(region_scrol)
+            panel.sel().clear()
+            panel.sel().add(declar_point)
+            panel.show_at_center(show_point)
 
-        if line_col[0] > 0:
-            point = panel.text_point(line_col[0] - 1, 1)
-            region_scrol = panel.line(point)
+        if sum(line_col) > 0:
+            row, col = line_col
+
+            if self.settings.get('highlight_declare', True):
+                region_mark = panel.word(panel.text_point(line_col[0] - 1, line_col[1]))
+                panel.add_regions(self.NAME_REGION, [region_mark], 'string', 'dot', sublime.DRAW_NO_FILL)
+
+            show_point = panel.text_point(row - 1, 0)
+            declar_point = panel.text_point(row - 1, col - 1)
             self.run_after_loading(panel, show_at_center)
-
-        if line_col:
-            region_mark = panel.word(panel.text_point(line_col[0] - 1, line_col[1]))
-            panel.add_regions(self.NAME_REGION, [region_mark], 'string', 'dot', sublime.DRAW_NO_FILL)
 
         panel.set_read_only(True)
         self.show_panel(panel)
